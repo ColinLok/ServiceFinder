@@ -16,6 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Page2List" />
+        <activity android:name=".Page3Detail"></activity>
     </application>
 
 </manifest>
