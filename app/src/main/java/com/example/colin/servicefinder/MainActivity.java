@@ -13,6 +13,8 @@ public class MainActivity extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+
         findViewById(R.id.btn_about).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -39,5 +41,13 @@ public class MainActivity extends Activity{
                 startActivity(page3);
             }
         });
+
+
+
     }
+    public void toSecondActivity(View v){
+        Intent page2 = new Intent(this,Page2List.class);
+        startActivity(page2);
+    }
+
 }

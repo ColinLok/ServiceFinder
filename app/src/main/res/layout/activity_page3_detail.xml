@@ -14,25 +14,24 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="250dp"
+        android:layout_marginTop="178dp"
         android:text="Name: Government Service" />
 
     <TextView
         android:id="@+id/address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="222dp"
+        android:layout_centerVertical="true"
         android:text="Address: Across the street" />
 
     <TextView
         android:id="@+id/phone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="256dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="230dp"
         android:text="Phone#: 911" />
 
     <ImageView
@@ -46,14 +45,14 @@
 
     <com.mapbox.mapboxsdk.maps.MapView
         android:id="@+id/mapView"
-        android:layout_width="203dp"
-        android:layout_height="142dp"
+        android:layout_width="294dp"
+        android:layout_height="212dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="38dp"
-        mapbox:mapbox_cameraTargetLat="40.73581"
-        mapbox:mapbox_cameraTargetLng="-73.99155"
-        mapbox:mapbox_cameraZoom="11"
+        mapbox:mapbox_cameraTargetLat="49.2034967437016"
+        mapbox:mapbox_cameraTargetLng="-122.909636869742"
+        mapbox:mapbox_cameraZoom="13"
         mapbox:mapbox_styleUrl="mapbox://styles/mapbox/streets-v10" />
 
     <android.support.v7.widget.Toolbar

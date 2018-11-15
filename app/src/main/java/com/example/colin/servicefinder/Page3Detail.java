@@ -1,14 +1,23 @@
 package com.example.colin.servicefinder;
 
+import android.content.Intent;
+import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.widget.TextView;
 
 import com.mapbox.mapboxsdk.Mapbox;
+import com.mapbox.mapboxsdk.annotations.MarkerOptions;
+import com.mapbox.mapboxsdk.geometry.LatLng;
 import com.mapbox.mapboxsdk.maps.MapView;
+import com.mapbox.mapboxsdk.maps.MapboxMap;
+import com.mapbox.mapboxsdk.maps.OnMapReadyCallback;
 
 public class Page3Detail extends AppCompatActivity {
     private MapView mapView;
+    DatabaseHelper db;
+    Cursor cursor;
 
 
     @Override
@@ -16,10 +25,39 @@ public class Page3Detail extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         Mapbox.getInstance(this, "pk.eyJ1IjoiYmlpYTAiLCJhIjoiY2puejFteDl3MWUwYzN2bmR5dHZ1Zzd6diJ9.KdZCXQHsk-0b9hOIPvhtng");
         setContentView(R.layout.activity_page3_detail);
+        Intent intent = getIntent();
+        int i = intent.getIntExtra("id",0);
+        db = new DatabaseHelper(this);
+        cursor = db.viewData();
+        cursor.moveToPosition(i);
+        double lat = Double.parseDouble(cursor.getString(6));
+        double lon = Double.parseDouble(cursor.getString(5));
+
         mapView = (MapView) findViewById(R.id.mapView);
         mapView.onCreate(savedInstanceState);
+        mapView.getMapAsync(new OnMapReadyCallback() {
+            @Override
+            public void onMapReady(MapboxMap mapboxMap) {
+                // One way to add a marker view
+                mapboxMap.addMarker(new MarkerOptions()
+                        .position(new LatLng(lat,lon))
+                        .title(cursor.getString(1))
+                        .snippet(cursor.getString(2))
+                );
+            }
+        });
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
+
+        TextView description = (TextView)findViewById(R.id.address);
+        description.setText("Hours: " + cursor.getString(4));
+
+        TextView name = (TextView)findViewById(R.id.name);
+        name.setText("Name: " + cursor.getString(1));
+
+        TextView phone= (TextView)findViewById(R.id.phone);
+        phone.setText("Phone#: " + cursor.getString(8));
+
 
     }
     @Override
