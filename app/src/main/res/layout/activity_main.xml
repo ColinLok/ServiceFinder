@@ -54,26 +54,27 @@
                 <!--android:contentDescription="@string/app_name"-->
                 <!--android:src="@drawable/about" />-->
 
-            <ImageButton
-                android:id="@+id/btn_service"
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                android:background="#00ffffff"
-                android:scaleType="fitXY"
-                android:contentDescription="@string/app_name"
-                android:src="@drawable/service" />
+        <ImageButton
+            android:id="@+id/btn_service"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:background="#00ffffff"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/service" />
 
         <!--</LinearLayout>-->
 
         <ImageButton
             android:id="@+id/btn_find_house"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:background="#00ffffff"
-            android:scaleType="fitXY"
-            android:layout_marginLeft="10dp"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
             android:layout_marginRight="10dp"
+            android:background="#00ffffff"
             android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
             android:src="@drawable/location" />
 
     </LinearLayout>
@@ -81,20 +82,21 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_marginTop="10dp"
-        android:gravity="center_vertical">
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
 
         <ImageButton
             android:id="@+id/btn_application"
             android:layout_width="170dp"
             android:layout_height="170dp"
-            android:background="#00ffffff"
-            android:scaleType="fitXY"
-            android:layout_weight="1"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="30dp"
             android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#00ffffff"
             android:contentDescription="@string/app_name"
+
+            android:scaleType="fitXY"
             android:src="@drawable/application"
             android:text="@string/application" />
 
@@ -102,11 +104,12 @@
             android:id="@+id/btn_faq"
             android:layout_width="170dp"
             android:layout_height="170dp"
-            android:background="#00ffffff"
-            android:scaleType="fitXY"
-            android:layout_weight="1"
             android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#00ffffff"
             android:contentDescription="@string/app_name"
+
+            android:scaleType="fitXY"
             android:src="@drawable/faq"
             android:text="@string/faq" />
     </LinearLayout>

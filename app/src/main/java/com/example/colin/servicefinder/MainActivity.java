@@ -17,15 +17,9 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(myToolbar);
 
 
-        findViewById(R.id.btn_about).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //在onClick()中启动另一个Activity
-                Intent About = new Intent(MainActivity.this,About.class);
-                        startActivity(About);
 
-            }
-        });
+
+
         findViewById(R.id.btn_find_house).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -72,5 +66,6 @@ public class MainActivity extends AppCompatActivity {
         Intent page2 = new Intent(this,Page2List.class);
         startActivity(page2);
     }
+
 
 }
