@@ -37,39 +37,38 @@
         android:orientation="horizontal"
         android:gravity="center_vertical">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center_vertical"
-            android:layout_marginLeft="10dp">
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:layout_marginLeft="10dp">-->
 
-            <ImageButton
-                android:id="@+id/btn_about"
-                android:layout_width="110dp"
-                android:layout_height="110dp"
-                android:background="#00ffffff"
-                android:scaleType="fitXY"
+            <!--<ImageButton-->
+                <!--android:id="@+id/btn_about"-->
+                <!--android:layout_width="110dp"-->
+                <!--android:layout_height="110dp"-->
+                <!--android:background="#00ffffff"-->
+                <!--android:scaleType="fitXY"-->
 
-                android:contentDescription="@string/app_name"
-                android:src="@drawable/about" />
+                <!--android:contentDescription="@string/app_name"-->
+                <!--android:src="@drawable/about" />-->
 
             <ImageButton
                 android:id="@+id/btn_service"
-                android:layout_width="110dp"
-                android:layout_height="110dp"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
                 android:background="#00ffffff"
                 android:scaleType="fitXY"
-                android:layout_marginTop="10dp"
                 android:contentDescription="@string/app_name"
                 android:src="@drawable/service" />
 
-        </LinearLayout>
+        <!--</LinearLayout>-->
 
         <ImageButton
             android:id="@+id/btn_find_house"
-            android:layout_width="230dp"
-            android:layout_height="230dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
             android:background="#00ffffff"
             android:scaleType="fitXY"
             android:layout_marginLeft="10dp"
