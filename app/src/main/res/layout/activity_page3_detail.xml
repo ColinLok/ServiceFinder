@@ -32,7 +32,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="230dp"
-        android:text="Phone#: 911" />
+        android:autoLink="phone"/>
 
     <ImageView
         android:id="@+id/logo"

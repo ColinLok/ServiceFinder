@@ -56,7 +56,8 @@ public class Page3Detail extends AppCompatActivity {
         name.setText("Name: " + cursor.getString(1));
 
         TextView phone= (TextView)findViewById(R.id.phone);
-        phone.setText("Phone#: " + cursor.getString(8));
+        phone.setText(cursor.getString(8));
+
 
 
     }
