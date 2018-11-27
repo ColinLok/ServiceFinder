@@ -1,0 +1,386 @@
+{
+	"name" : "GOVERNMENT_AND_JUSTICE_SERVICES",
+	"type" : "FeatureCollection",
+	"features" : [
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -122.90963686974206, 49.203496743701606 ]
+			},
+			"properties" : {
+				"Name" : "ACORN Canada",
+				"Description" : null,
+				"Category" : "Government and Justice Services",
+				"Hours" : "By appointment only: Fridays, 1:30 pm - 6:00 pm, Saturdays, 8:00 pm - 5:00 pm",
+				"Location" : "Suite 2 - 630B Carnarvon St",
+				"PC" : "V3M 1E5",
+				"Phone" : "604-522-8707",
+				"Email" : "bcacorn@acorncanada.org",
+				"Website" : "https://www.nwpl.ca/database/files/library/Community_Volunteer_Tax_Program___March_2018(1).pdf",
+				"X" : "-122.90963686974206",
+				"Y" : "49.203496743701606"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -122.910794429807, 49.201189703788145 ]
+			},
+			"properties" : {
+				"Name" : "BC Provincial Government - Ministry of Child and Family Development - Aboriginal Circle 6 Tri-Cities Family Services",
+				"Description" : null,
+				"Category" : "Government and Justice Services",
+				"Hours" : null,
+				"Location" : "201 - 768 Columbia St",
+				"PC" : "V3M 1B4",
+				"Phone" : "604-660-5149",
+				"Email" : null,
+				"Website" : "https://www2.gov.bc.ca/gov/content/family-social-supports/data-monitoring-quality-assurance/find-services-for-children-teens-families/sda-new-westminister-aboriginal-circle-6?keyword=new&keyword=westminster&keyword=bc",
+				"X" : "-122.910794429807",
+				"Y" : "49.201189703788145"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -122.91713496972558, 49.20120677816973 ]
+			},
+			"properties" : {
+				"Name" : "British Columbia Provincial Government - Family Justice Centre",
+				"Description" : null,
+				"Category" : "Government and Justice Services",
+				"Hours" : "Monday, Tuesday, Wednesday and Friday, 8:00 am - 5:15 pm, Thursday, 8:00 am - 7:00 pm",
+				"Location" : "204 - 88 Tenth St",
+				"PC" : "V3M 6H8",
+				"Phone" : "604-660-8636",
+				"Email" : null,
+				"Website" : "http://www.clicklaw.bc.ca/helpmap/service/1019",
+				"X" : "-122.91713496972558",
+				"Y" : "49.20120677816973"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -122.9190590670046, 49.20075296762267 ]
+			},
+			"properties" : {
+				"Name" : "British Columbia Provincial Government - Ministry of Children and Family Development",
+				"Description" : null,
+				"Category" : "Government and Justice Services",
+				"Hours" : null,
+				"Location" : "201 - 1065 Columbia St",
+				"PC" : "V3M 6H7",
+				"Phone" : "604-660-9495",
+				"Email" : null,
+				"Website" : "https://www2.gov.bc.ca/gov/content/family-social-supports/data-monitoring-quality-assurance/find-services-for-children-teens-families/sda-new-westminster-columbia-st?keyword=new&keyword=westminster&keyword=bc",
+				"X" : "-122.9190590670046",
+				"Y" : "49.20075296762267"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -122.89320328399515, 49.2248494547638 ]
+			},
+			"properties" : {
+				"Name" : "British Columbia Provincial Government - Ministry of Children and Family Development",
+				"Description" : null,
+				"Category" : "Government and Justice Services",
+				"Hours" : null,
+				"Location" : "200 - 237 E Columbia St",
+				"PC" : "V3L 3W4",
+				"Phone" : "604-660-5211",
+				"Email" : null,
+				"Website" : "https://www2.gov.bc.ca/gov/content/family-social-supports/data-monitoring-quality-assurance/find-services-for-children-teens-families/sda-new-westminister-after-hours?keyword=new&keyword=westminster&keyword=bc",
+				"X" : "-122.89320328399515",
+				"Y" : "49.2248494547638"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -122.91055787308517, 49.20482320562745 ]
+			},
+			"properties" : {
+				"Name" : "British Columbia Provincial Government - Ministry of Justice - New Westminster Community Corrections",
+				"Description" : null,
+				"Category" : "Government and Justice Services",
+				"Hours" : null,
+				"Location" : "103 - 80A Sixth St",
+				"PC" : "V3L 5B3",
+				"Phone" : "604-660-8834",
+				"Email" : null,
+				"Website" : "https://www2.gov.bc.ca/gov/content/justice/criminal-justice/corrections/probation-offices/mailing-addresses",
+				"X" : "-122.91055787308517",
+				"Y" : "49.20482320562745"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -122.91787120219065, 49.20139871416298 ]
+			},
+			"properties" : {
+				"Name" : "British Columbia Provincial Government - Ministry of Social Development and Poverty Reduction - Employment and Assistance Office",
+				"Description" : null,
+				"Category" : "Government and Justice Services",
+				"Hours" : null,
+				"Location" : "202 - 1015 Columbia St",
+				"PC" : "V3M 6H6",
+				"Phone" : "1-866-866-0800",
+				"Email" : null,
+				"Website" : "https://www2.gov.bc.ca/gov/content/family-social-supports/income-assistance/access-services",
+				"X" : "-122.91787120219065",
+				"Y" : "49.20139871416298"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -122.92609125314297, 49.21175628935308 ]
+			},
+			"properties" : {
+				"Name" : "Century House - Taxfiling clinics",
+				"Description" : null,
+				"Category" : "Government and Justice Services",
+				"Hours" : "Generally March of each year",
+				"Location" : "620 Eighth St",
+				"PC" : "V3M 3S2",
+				"Phone" : "604-519-1066",
+				"Email" : null,
+				"Website" : "https://www.nwpl.ca/database/files/library/Community_Volunteer_Tax_Program___March_2018(1).pdf",
+				"X" : "-122.92609125314297",
+				"Y" : "49.21175628935308"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -122.9108959983948, 49.206781679884436 ]
+			},
+			"properties" : {
+				"Name" : "City of New Westminster - City Hall",
+				"Description" : null,
+				"Category" : "Government and Justice Services",
+				"Hours" : "Monday, 8:00 am - 8:00 pm, Tuesday-Friday, 8:00am-5:00pm",
+				"Location" : "511 Royal Ave",
+				"PC" : "V3L 1H9",
+				"Phone" : "604-521-3711",
+				"Email" : "info@newwestcity.ca",
+				"Website" : "https://www.newwestcity.ca/city_hall/",
+				"X" : "-122.9108959983948",
+				"Y" : "49.206781679884436"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -122.90823879996866, 49.22020726264855 ]
+			},
+			"properties" : {
+				"Name" : "City of New Westminster - Fire & Rescue Services",
+				"Description" : null,
+				"Category" : "Government and Justice Services",
+				"Hours" : "Non-emergency hours: Monday to Friday, 8:30 am - 4:30 pm",
+				"Location" : "1 E Sixth Ave",
+				"PC" : "V3L 4G6",
+				"Phone" : "604-519-1000 (non-emergency), 911 (emergency)",
+				"Email" : "fire@newwestcity.ca",
+				"Website" : "https://www.newwestcity.ca/services/public-safety/fire-and-rescue-services/about-new-westminster-fire-and-rescue-services",
+				"X" : "-122.90823879996866",
+				"Y" : "49.22020726264855"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -122.90763511920632, 49.203703522925274 ]
+			},
+			"properties" : {
+				"Name" : "City of New Westminster - Police Department",
+				"Description" : null,
+				"Category" : "Government and Justice Services",
+				"Hours" : "Non-emergency services: Monday- Friday, 8:00 am - 6:00 pm, Saturday-Sunday, 8:00 am - 1:00 pm and 2:00 pm - 6:00 pm",
+				"Location" : "555 Columbia St",
+				"PC" : "V3L 1B2",
+				"Phone" : "604-525-5411 (non-emergency), 911 (emergency)",
+				"Email" : "inf@nwpolice.org",
+				"Website" : "http://www.nwpolice.org/",
+				"X" : "-122.90763511920632",
+				"Y" : "49.203703522925274"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -122.91274781516022, 49.20350201411526 ]
+			},
+			"properties" : {
+				"Name" : "Douglas College Commerce & Business Association - Community Income Tax Clinic",
+				"Description" : null,
+				"Category" : "Government and Justice Services",
+				"Hours" : "Generally March-April of every year",
+				"Location" : "700 Royal Ave",
+				"PC" : "V3M 5Z5",
+				"Phone" : null,
+				"Email" : "vp-accounting@dc-ba.com",
+				"Website" : "https://www.nwpl.ca/database/files/library/Community_Volunteer_Tax_Program___March_2018(1).pdf",
+				"X" : "-122.91274781516022",
+				"Y" : "49.20350201411526"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -122.89242926128995, 49.22805504991801 ]
+			},
+			"properties" : {
+				"Name" : "Elizabeth Fry Society of Greater Vancouver",
+				"Description" : null,
+				"Category" : "Government and Justice Services",
+				"Hours" : null,
+				"Location" : "402 E Columbia St",
+				"PC" : "V3L 3X1",
+				"Phone" : "604-520-1166",
+				"Email" : "info@elizabethfry.com",
+				"Website" : "https://www.elizabethfry.com/",
+				"X" : "-122.89242926128995",
+				"Y" : "49.22805504991801"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -122.91148369358666, 49.20491835146481 ]
+			},
+			"properties" : {
+				"Name" : "Federal Government of Canada - Service Canada Centre",
+				"Description" : null,
+				"Category" : "Government and Justice Services",
+				"Hours" : "Monday-Friday, 8:30am-4:00pm",
+				"Location" : "201 - 620 Royal Ave",
+				"PC" : "V3M 1J2",
+				"Phone" : "1-800-926-9105",
+				"Email" : null,
+				"Website" : "http://www1.servicecanada.gc.ca/cgi-bin/sc-dsp.cgi?rc=5940&ln=e#pa",
+				"X" : "-122.91148369358666",
+				"Y" : "49.20491835146481"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -122.92252572535635, 49.212490006536555 ]
+			},
+			"properties" : {
+				"Name" : "Fraser Health Authority - Public Health Unit",
+				"Description" : null,
+				"Category" : "Government and Justice Services",
+				"Hours" : null,
+				"Location" : "218 - 610 Sixth St",
+				"PC" : "V3L 3C2",
+				"Phone" : "604-777-6740",
+				"Email" : null,
+				"Website" : "https://www.fraserhealth.ca/find-us/public-health-units/",
+				"X" : "-122.92252572535635",
+				"Y" : "49.212490006536555"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -122.90526186157656, 49.20499428355258 ]
+			},
+			"properties" : {
+				"Name" : "Grace Multicultural Services - Taxfiling clinic",
+				"Description" : null,
+				"Category" : "Government and Justice Services",
+				"Hours" : "Generally offered in March and April of each year",
+				"Location" : "C - 369 Columbia St",
+				"PC" : "V3L 5S3",
+				"Phone" : "604-526-7732",
+				"Email" : null,
+				"Website" : "https://www.nwpl.ca/database/files/library/Community_Volunteer_Tax_Program___March_2018(1).pdf",
+				"X" : "-122.90526186157656",
+				"Y" : "49.20499428355258"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -122.9116023674434, 49.202383459116035 ]
+			},
+			"properties" : {
+				"Name" : "Seniors Services Society - Taxfiling clinic",
+				"Description" : null,
+				"Category" : "Government and Justice Services",
+				"Hours" : null,
+				"Location" : "750 Carnarvon St",
+				"PC" : "V3M 1E7",
+				"Phone" : "604-520-6621",
+				"Email" : null,
+				"Website" : "http://www.seniorsservicessociety.ca/staxclinic.htm",
+				"X" : "-122.9116023674434",
+				"Y" : "49.202383459116035"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -122.93314490646748, 49.21498017456232 ]
+			},
+			"properties" : {
+				"Name" : "The Image of God Church - Taxfiling clinic",
+				"Description" : null,
+				"Category" : "Government and Justice Services",
+				"Hours" : "Generally offered in March and April of each year",
+				"Location" : "925 Tenth St",
+				"PC" : "V3M 4A8",
+				"Phone" : "778-240-7191",
+				"Email" : null,
+				"Website" : "https://www.nwpl.ca/database/files/library/Community_Volunteer_Tax_Program___March_2018(1).pdf",
+				"X" : "-122.93314490646748",
+				"Y" : "49.21498017456232"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -122.90934416053088, 49.202799308421426 ]
+			},
+			"properties" : {
+				"Name" : "Union Gospel Mission",
+				"Description" : null,
+				"Category" : "Government and Justice Services",
+				"Hours" : null,
+				"Location" : "658 Clarkson St",
+				"PC" : "V3M 1E1",
+				"Phone" : "604-525-8989",
+				"Email" : "contact@ugm.ca ",
+				"Website" : "https://www.ugm.ca/program-meal-times/",
+				"X" : "-122.90934416053088",
+				"Y" : "49.202799308421426"
+			}
+		}
+	]
+}

@@ -1,5 +1,6 @@
 package com.example.colin.servicefinder;
 
+import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
@@ -14,26 +15,57 @@ import com.mapbox.mapboxsdk.maps.MapView;
 import com.mapbox.mapboxsdk.maps.MapboxMap;
 import com.mapbox.mapboxsdk.maps.OnMapReadyCallback;
 
+import java.io.IOException;
+import java.io.InputStream;
+
 public class Page3Detail extends AppCompatActivity {
     private MapView mapView;
     DatabaseHelper db;
     Cursor cursor;
 
+    public String loadJSONFromAsset(Context context)throws Exception{
+        String json = null;
+        try {
+            InputStream is = context.getAssets().open("GOVERNMENT_AND_JUSTICE_SERVICES.json");
+
+            int size = is.available();
+
+            byte[] buffer = new byte[size];
+
+            is.read(buffer);
+
+            is.close();
+
+            json = new String(buffer, "UTF-8");
+
+
+        } catch (IOException ex) {
+            ex.printStackTrace();
+            return null;
+        }
+        return json;
+
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         Mapbox.getInstance(this, "pk.eyJ1IjoiYmlpYTAiLCJhIjoiY2puejFteDl3MWUwYzN2bmR5dHZ1Zzd6diJ9.KdZCXQHsk-0b9hOIPvhtng");
         setContentView(R.layout.activity_page3_detail);
         Intent intent = getIntent();
         int i = intent.getIntExtra("id",0);
-        db = new DatabaseHelper(this);
+        try {
+            db = new DatabaseHelper(this, loadJSONFromAsset(this));
+        }catch(Exception e){}
         cursor = db.viewData();
         cursor.moveToPosition(i);
         double lat = Double.parseDouble(cursor.getString(6));
         double lon = Double.parseDouble(cursor.getString(5));
 
         mapView = (MapView) findViewById(R.id.mapView);
+
         mapView.onCreate(savedInstanceState);
         mapView.getMapAsync(new OnMapReadyCallback() {
             @Override
@@ -56,7 +88,7 @@ public class Page3Detail extends AppCompatActivity {
         name.setText("Name: " + cursor.getString(1));
 
         TextView phone= (TextView)findViewById(R.id.phone);
-        phone.setText("Phone#: " + cursor.getString(8));
+        phone.setText(cursor.getString(8));
 
 
     }
