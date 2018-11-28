@@ -13,19 +13,20 @@
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/address"
-        android:layout_marginTop="105dp"
+        android:layout_marginTop="66dp"
         android:text="Name: Government Service"
+        android:textSize="30dp"
         tools:fontFamily="sans-serif" />
 
     <TextView
         android:id="@+id/address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/phone"
-        android:layout_marginTop="168dp"
+        android:layout_marginTop="182dp"
         android:text="Address: Across the street" />
 
     <TextView
@@ -39,7 +40,7 @@
 
     <com.mapbox.mapboxsdk.maps.MapView
         android:id="@+id/mapView"
-        android:layout_width="361dp"
+        android:layout_width="match_parent"
         android:layout_height="279dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
