@@ -134,14 +134,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 
 
-        db.execSQL("INSERT INTO JusticeServices(Name,Description,Category,Hours,X,Y,PostalCode,Phone,Email,Website)" +
-                    "VALUES(\"ACORN Canada\", \"thing\",\"Government and Justice Services\", \"By appointment only: Fridays, 1:30 pm - 6:00 pm, Saturdays, 8:00 pm - 5:00 pm\"" +
-                    ",\"-122.909636869742\", \"49.2034967437016\", \"V3M 1E5\", \"604-522-8707\", \"bcacorn@acorncanada.org\", \"https://www.nwpl.ca/database/files/library/Community_Volunteer_Tax_Program___March_2018(1).pdf\" )");
-
-        db.execSQL("INSERT INTO JusticeServices(Name,Description,Category,Hours,X,Y,PostalCode,Phone,Email,Website)" +
-                "VALUES(\"BC Provincial Government - Ministry of Child and Family Development - Aboriginal Circle 6 Tri-Cities Family Services\", \"thing\",\"Government and Justice Services\", \"Monday, Tuesday, Wednesday and Friday, 8:00 am - 5:15 pm, Thursday, 8:00 am - 7:00 pm\"" +
-                ",\"-122.910794429807\", \"49.2011897037881\", \"V3M 1B4\", \"604-660-8636\", \"bcacorn@acorncanada.org\", \"https://www2.gov.bc.ca/gov/content/family-social-supports/data-monitoring-quality-assurance/find-services-for-children-teens-families/sda-new-westminister-aboriginal-circle-6?keyword=new&keyword=westminster&keyword=bc\" )");
-
 }
 
     @Override

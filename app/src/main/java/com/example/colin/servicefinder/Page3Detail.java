@@ -78,6 +78,7 @@ public class Page3Detail extends AppCompatActivity {
                 );
             }
         });
+
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
 
@@ -85,10 +86,10 @@ public class Page3Detail extends AppCompatActivity {
         description.setText("Hours: " + cursor.getString(4));
 
         TextView name = (TextView)findViewById(R.id.name);
-        name.setText("Name: " + cursor.getString(1));
+        name.setText(cursor.getString(1));
 
         TextView phone= (TextView)findViewById(R.id.phone);
-        phone.setText(cursor.getString(8));
+        phone.setText("Phone# " + cursor.getString(8));
 
 
     }
