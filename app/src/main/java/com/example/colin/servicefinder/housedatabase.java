@@ -83,8 +83,8 @@ public class housedatabase extends SQLiteOpenHelper {
 
                 String str = "INSERT INTO tbl_house(Name,Address,X,Y)"
                         + "VALUES("
-                        + "\"" + name + "\", "
                         + "\"" + address + "\", "
+                        + "\"" + name + "\", "
                         + "\"" + x + "\", "
                         + "\"" + y + "\")";
 
