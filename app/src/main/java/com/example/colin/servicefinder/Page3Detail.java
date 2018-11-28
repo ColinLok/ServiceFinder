@@ -10,6 +10,8 @@ import android.widget.TextView;
 
 import com.mapbox.mapboxsdk.Mapbox;
 import com.mapbox.mapboxsdk.annotations.MarkerOptions;
+import com.mapbox.mapboxsdk.camera.CameraPosition;
+import com.mapbox.mapboxsdk.camera.CameraUpdateFactory;
 import com.mapbox.mapboxsdk.geometry.LatLng;
 import com.mapbox.mapboxsdk.maps.MapView;
 import com.mapbox.mapboxsdk.maps.MapboxMap;
@@ -71,6 +73,13 @@ public class Page3Detail extends AppCompatActivity {
             @Override
             public void onMapReady(MapboxMap mapboxMap) {
                 // One way to add a marker view
+                CameraPosition position = new CameraPosition.Builder()
+                        .target(new LatLng(lat,lon)) // Sets the new camera position
+                        .zoom(13) // Sets the zoom to level 13
+                        .tilt(20) // Set the camera tilt to 20 degrees
+                        .build(); // Builds the CameraPosition object from the builder
+                mapboxMap.animateCamera(CameraUpdateFactory
+                        .newCameraPosition(position), 500);
                 mapboxMap.addMarker(new MarkerOptions()
                         .position(new LatLng(lat,lon))
                         .title(cursor.getString(1))
