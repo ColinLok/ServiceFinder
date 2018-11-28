@@ -18,93 +18,105 @@
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_vertical">
-        <ImageView
-            android:id="@+id/image_logo"
-            android:layout_width="wrap_content"
-            android:layout_height="200dp"
-            android:adjustViewBounds="true"
-            android:scaleType="fitXY"
-            app:srcCompat="@drawable/primary_logo_on_transparent_211x71" />
-    </LinearLayout>
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/image_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/primary_logo_on_transparent_211x71" />
+            </LinearLayout>
 
-        <!--<LinearLayout-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:orientation="vertical"-->
-            <!--android:gravity="center_vertical"-->
-            <!--android:layout_marginLeft="10dp">-->
 
-            <!--<ImageButton-->
-                <!--android:id="@+id/btn_about"-->
-                <!--android:layout_width="110dp"-->
-                <!--android:layout_height="110dp"-->
-                <!--android:background="#00ffffff"-->
-                <!--android:scaleType="fitXY"-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
 
-                <!--android:contentDescription="@string/app_name"-->
-                <!--android:src="@drawable/about" />-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:layout_marginLeft="10dp">-->
 
-        <ImageButton
-            android:id="@+id/btn_service"
-            android:layout_width="170dp"
-            android:layout_height="170dp"
-            android:layout_marginRight="10dp"
-            android:background="#00ffffff"
-            android:contentDescription="@string/app_name"
-            android:scaleType="fitXY"
-            android:src="@drawable/service" />
+                    <!--<ImageButton-->
+                        <!--android:id="@+id/btn_about"-->
+                        <!--android:layout_width="110dp"-->
+                        <!--android:layout_height="110dp"-->
+                        <!--android:background="#00ffffff"-->
+                        <!--android:scaleType="fitXY"-->
 
-        <!--</LinearLayout>-->
+                        <!--android:contentDescription="@string/app_name"-->
+                        <!--android:src="@drawable/about" />-->
 
-        <ImageButton
-            android:id="@+id/btn_find_house"
-            android:layout_width="170dp"
-            android:layout_height="170dp"
-            android:background="#00ffffff"
-            android:contentDescription="@string/app_name"
-            android:scaleType="fitXY"
-            android:src="@drawable/location" />
+                <ImageButton
+                    android:id="@+id/btn_service"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#00ffffff"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/service" />
 
-    </LinearLayout>
+                <!--</LinearLayout>-->
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:gravity="center"
-        android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/btn_find_house"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:background="#00ffffff"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/location" />
 
-        <ImageButton
-            android:id="@+id/btn_application"
-            android:layout_width="170dp"
-            android:layout_height="170dp"
-            android:layout_marginRight="10dp"
-            android:background="#00ffffff"
-            android:contentDescription="@string/app_name"
+            </LinearLayout>
 
-            android:scaleType="fitXY"
-            android:src="@drawable/application"
-            android:text="@string/application" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
 
-        <ImageButton
-            android:id="@+id/btn_faq"
-            android:layout_width="170dp"
-            android:layout_height="170dp"
-            android:background="#00ffffff"
-            android:contentDescription="@string/app_name"
+                <ImageButton
+                    android:id="@+id/btn_application"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#00ffffff"
+                    android:contentDescription="@string/app_name"
 
-            android:scaleType="fitXY"
-            android:src="@drawable/faq"
-            android:text="@string/faq" />
-    </LinearLayout>
+                    android:scaleType="fitXY"
+                    android:src="@drawable/application"
+                    android:text="@string/application" />
+
+                <ImageButton
+                    android:id="@+id/btn_faq"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:background="#00ffffff"
+                    android:contentDescription="@string/app_name"
+
+                    android:scaleType="fitXY"
+                    android:src="@drawable/faq"
+                    android:text="@string/faq" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
