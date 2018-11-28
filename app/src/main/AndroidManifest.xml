@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.colin.servicefinder">
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -19,7 +19,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".Page2List" />
-        <activity android:name=".Page3Detail"></activity>
+        <activity android:name=".Page3Detail" />
+        <activity android:name=".FAQ" />
+        <activity android:name=".Application" />
+        <activity android:name=".About"></activity>
     </application>
 
 </manifest>
