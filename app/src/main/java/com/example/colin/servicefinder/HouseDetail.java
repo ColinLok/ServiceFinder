@@ -35,9 +35,9 @@ public class HouseDetail extends AppCompatActivity {
         Mapbox.getInstance(this, "pk.eyJ1IjoiYmlpYTAiLCJhIjoiY2puejFteDl3MWUwYzN2bmR5dHZ1Zzd6diJ9.KdZCXQHsk-0b9hOIPvhtng");
         setContentView(R.layout.activity_house_detail);
         Intent intent = getIntent();
-        Intent intent2 = getIntent();
+
         int i = intent.getIntExtra("id",0);
-        int i2 = intent2.getIntExtra("id",0);
+
         IconFactory iconFactory = IconFactory.getInstance(HouseDetail.this);
         Icon icon = iconFactory.fromResource(R.drawable.hicon);
         try {
@@ -47,7 +47,7 @@ public class HouseDetail extends AppCompatActivity {
         cursor = db.viewData();
         cursor2 = db2.viewData();
         cursor.moveToPosition(i);
-        cursor2.moveToPosition(i2);
+        cursor2.moveToPosition(0);
 
         double lat = Double.parseDouble(cursor.getString(4));
         double lon = Double.parseDouble(cursor.getString(3));
