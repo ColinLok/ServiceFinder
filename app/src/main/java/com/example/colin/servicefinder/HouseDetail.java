@@ -9,6 +9,8 @@ import android.support.v7.widget.Toolbar;
 import android.widget.TextView;
 
 import com.mapbox.mapboxsdk.Mapbox;
+import com.mapbox.mapboxsdk.annotations.Icon;
+import com.mapbox.mapboxsdk.annotations.IconFactory;
 import com.mapbox.mapboxsdk.annotations.MarkerOptions;
 import com.mapbox.mapboxsdk.geometry.LatLng;
 import com.mapbox.mapboxsdk.maps.MapView;
@@ -21,7 +23,9 @@ import java.io.InputStream;
 public class HouseDetail extends AppCompatActivity {
     private MapView mapView;
     housedatabase db;
+    DatabaseHelper db2;
     Cursor cursor;
+    Cursor cursor2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,14 +33,23 @@ public class HouseDetail extends AppCompatActivity {
         Mapbox.getInstance(this, "pk.eyJ1IjoiYmlpYTAiLCJhIjoiY2puejFteDl3MWUwYzN2bmR5dHZ1Zzd6diJ9.KdZCXQHsk-0b9hOIPvhtng");
         setContentView(R.layout.activity_house_detail);
         Intent intent = getIntent();
+        Intent intent2 = getIntent();
         int i = intent.getIntExtra("id",0);
+        int i2 = intent2.getIntExtra("id",0);
+        IconFactory iconFactory = IconFactory.getInstance(HouseDetail.this);
+        Icon icon = iconFactory.fromResource(R.drawable.hicon);
         try {
             db = new housedatabase(this, loadJSONFromAsset(this));
+            db2 = new DatabaseHelper(this,loadJSONFromAsset(this));
         }catch(Exception e){}
         cursor = db.viewData();
+        cursor2 = db2.viewData();
         cursor.moveToPosition(i);
+        cursor2.moveToPosition(i2);
+
         double lat = Double.parseDouble(cursor.getString(4));
         double lon = Double.parseDouble(cursor.getString(3));
+
 
         mapView = (MapView) findViewById(R.id.mapView);
 
@@ -49,7 +62,18 @@ public class HouseDetail extends AppCompatActivity {
                         .position(new LatLng(lat,lon))
                         .title(cursor.getString(1))
                         .snippet(cursor.getString(2))
+                        .icon(icon)
                 );
+
+                while(cursor2.moveToNext()){
+                    double lat2 = Double.parseDouble(cursor2.getString(6));
+                    double lon2 = Double.parseDouble(cursor2.getString(5));
+                    mapboxMap.addMarker(new MarkerOptions()
+                            .position(new LatLng(lat2,lon2))
+                            .title(cursor2.getString(1))
+                            .snippet(cursor2.getString(2))
+                    );
+                }
             }
         });
 
@@ -57,7 +81,7 @@ public class HouseDetail extends AppCompatActivity {
         setSupportActionBar(myToolbar);
 
         TextView description = (TextView)findViewById(R.id.address);
-        description.setText("Hours: " + cursor.getString(2));
+        description.setText("Address: " + cursor.getString(2));
 
         TextView name = (TextView)findViewById(R.id.name);
         name.setText("Name: " + cursor.getString(1));
