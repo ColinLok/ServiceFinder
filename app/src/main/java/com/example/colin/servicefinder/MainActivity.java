@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //在onClick()中启动另一个Activity
-                Intent page3 = new Intent(MainActivity.this,Page3Detail.class);
+                Intent page3 = new Intent(MainActivity.this,Houselist.class);
                 startActivity(page3);
             }
         });

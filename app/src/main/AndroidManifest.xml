@@ -26,6 +26,8 @@
         <activity android:name=".FAQ" />
         <activity android:name=".Application" />
         <activity android:name=".About"></activity>
+        <activity android:name=".Houselist"/>
+        <activity android:name=".HouseDetail"/>
     </application>
 
 </manifest>
