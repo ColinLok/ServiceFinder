@@ -80,7 +80,7 @@ public class HouseDetail extends AppCompatActivity {
                     mapboxMap.addMarker(new MarkerOptions()
                             .position(new LatLng(lat2,lon2))
                             .title(cursor2.getString(1))
-                            .snippet(cursor2.getString(2))
+                            .snippet(cursor2.getString(8))
                     );
                 }
             }
